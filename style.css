@@ -85,3 +85,21 @@ div.col:hover {
   transform: scale(2.5) translateX(20%);
 
 }
+
+/* Style for TheDOM */
+@media (min-width: 600px) {
+  .grid {
+    min-width: 200px;
+    min-height: 200px;
+    width: 99%;
+    margin: auto;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /*alternatively use repeat(4, 1fr)*/
+    grid-gap: 2px;
+  }
+  .selected {
+    border: 2px solid blue;
+  }
+}
