@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello Everybody! This is my curriculum. Regards, Joanna</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joanna Bak">
+  <!-- import the webpage stylesheet-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--repalce this h1 and p content with your own html table -->
+
+      <!--HEADER---------->
+<header>
+  <h1> Welcome to my profile </h1>
+  </header>
+
+      <!--SECTION 0---------->
+<section style="padding-top: 15px">
+  <a name="TheDOM.html"></a>
+  <h2><u>The DOM Practical</u></h2>
+  <p> Here you will find the task I completed on JAMstack bootcamp.</p>
+<p>This is a page showcase some of my favourite animals. The page contains:</p>
+<ul>
+  <li>
+    filters show/hide animals based on which filters are clicked.
+  </li>
+  <li>
+    a text input that can be used to filter the images based on their descriptions.
+  </li>
+  <li>
+    these two thing need to work together, so if the word jump is searched and the dog is clicked, only the dog post will show.
+  </li>
+</ul>
+  </section>
+      <!--SECTION 1---------->
+<section>
+  <!--build  into the section as a form to see it better-->
+  <div>
+    <p id="helper-text"></p>
+      <form>
+          <fieldset>
+            <!--Added search bar -->
+            <input id="search" placeholder="what are you searching?">
+            <!-- Added buttons to search animals with data for JS-->
+            <!--data is something constant but after dash we name as we want. In the quotation sign the name/attribute has to match image filter name-->
+              <button data-animal="dog" class="buttonFilter">Dog</button>
+              <button data-animal="flamingo" class="buttonFilter">Flamingo</button>
+              <button data-animal="gecko" class="buttonFilter">Gecko</button>
+              <button data-animal="all" class="buttonFilter">All</button>
+          </fieldset>
+      </form>
+      <!-- build the grid for pictures. Each rows has .class with propoerties: "imageFilter and name"-->
+        <div class="grid">
+          <div class="imageFilter dog">
+              <img src="img/pexels-photo-1108099.jpeg" width="200px">
+          </div>
+          <div class="imageFilter dog">
+              <img src="img/pexels-photo-2253275.jpeg" width="200px">
+          </div>
+          <div class="imageFilter flamingo">
+              <img src="img/flamingo-phoenicopterus-flamingos-phoenicopteriformes.jpg" width="200px">
+          </div>
+          <div class="imageFilter flamingo">
+              <img src="img/pexels-photo-441222.jpeg" width="200px">
+          </div>
+          <div class="imageFilter flamingo">
+              <img src="img/pexels-photo-1327405.jpeg" width="200px">
+          </div>
+          <div class="imageFilter dog">
+              <img src="img/pexels-photo-4681107.jpeg" width="200px">
+          </div>
+          <div class="imageFilter flamingo">
+              <img src="img/pexels-photo-565999.jpeg" width="200px">
+          </div>
+          <div class="imageFilter gecko">
+              <img src="img/gecko-reptile-terrarium-lizard-407037.jpeg" width="200px">
+          </div>
+          <div class="imageFilter gecko">
+              <img src="img/pexels-photo-3180754.jpeg" width="200px">
+          </div>
+          <div class="imageFilter gecko">
+              <img src="img/pexels-photo-2078845.jpeg" width="200px">
+          </div>
+          <div class="imageFilter gecko">
+              <img src="img/pexels-photo-3434870.jpeg" width="200px">
+          </div>
+      </div>
+  </div>
+
+
+    </section>
+
+  <!--SECTION 2---------->
+<section>
+</section>
+
+
+      <!--SECTION 3---------->
+<section>
+  </section>
+
+      <!--SECTION 4---------->
+<section>
+
+<p style="text-align: right">
+  <strong><a href="index.html">MAIN PAGE</a></strong></p>
+</section>
+
+<footer>
+  &copy; 2021 This page was created by Joanna.
+</footer>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
