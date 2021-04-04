@@ -13,3 +13,64 @@ console.log("Anne has got " + totalpupils + " pupils");
 console.log(`${numberOfKittens} kittens belong to Anne\'s daughter and ${numberOfPuppies} puppies belong Anne\'s son.`)
 
 //task 3
+
+
+
+//task 4
+function names(firstName, lastName) {
+  var fullName = `Hello ${firstName} ${lastName}`
+  return fullName
+}
+
+let sayFullName = names("Anne", "Cat");
+console.log(sayFullName);
+
+console.log(names("Alice", "Row"))
+
+//task5
+let currentTemperature = 30;
+function cold(temperature) {
+  if (temperature >= 30 && temperature < 50 ){
+    console.log("Put on coat")
+  } else if (temperature >= 0 && temperature < 30){
+    console.log("Put on a coat and a hat")
+  } else if (temperature < 0) {
+    console.log("Stay inside");
+  } else {
+    console.log("Just pants and vest are fine");
+  }
+}
+cold(currentTemperature); //Put on coat
+cold(60); //Just pants and vest
+cold(-7); //Stay inside
+cold(25); //Put on a coat and a hat
+
+//Task6
+function calculator(number1, number2, operator) {
+  switch(operator) {
+    case "+":
+    var result = number1 + number2;
+    console.log(number1, operator, number2, "=", result);
+    break;
+    case "-":
+    var result = number1 - number2;
+    console.log(number1, operator, number2, "=", result);
+    break;
+    case "*":
+    var result = number1 * number2;
+    console.log(number1, operator, number2, "=", result);
+    break;
+    case "/":
+    var result = number1 / number2;
+    console.log(number1, operator, number2, "=", result);
+    break;
+    case "%":
+    var result = number1 % number2;
+    console.log(number1, operator, number2, "=", result);
+    break;
+  }
+}
+calculator(2, 2, "+");
+calculator(8, 10, "-");
+calculator(6, 5, "*");
+calculator(6, 5, "%");
