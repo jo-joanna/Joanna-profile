@@ -74,3 +74,33 @@ calculator(2, 2, "+");
 calculator(8, 10, "-");
 calculator(6, 5, "*");
 calculator(6, 5, "%");
+
+
+//Task7
+for (var i = 1; i <= 12; i++) {
+  console.log(`${i} x 7 = ${i * 7}`)
+}
+
+for (var j = 1; j <= 12; j++) {
+  for (var k = 1; k <=12; k++) {
+    var result = j * k;
+    console.log(`${j} multiply by ${k} = ${result}`)
+  }
+}
+
+//Task8
+let myFavouriteFoods = [
+  "Pizza",
+  "Lasagne",
+  "Dumplings",
+  "Lettuce",
+  "ice cream"
+]
+console.log("This is my favourite food no 1: " + myFavouriteFoods[2]);
+console.log("This is my favourite food no 3: " + myFavouriteFoods[3]);
+
+for (var i = 0; i <myFavouriteFoods.length; i++) {
+  console.log(myFavouriteFoods[i]);
+}
+
+//Task9
