@@ -142,3 +142,11 @@ for (i = 0; i < recipe.ingredients.length; i++) {
   ingredients = recipe.ingredients[i];
   ingredient.innerHTML += "- " + ingredients + "<br>";
 }
+
+/* Add function to your recipe from the task9, called letsBake and have a say
+"I'm hungry! Let's bake ..." with the name of your recipe title. Call your new method */
+recipe.letsBake = true;
+recipe.letsBake = function() {
+  console.log("I'm hungry! Let\'s bake " + this.recipeTitle);
+}
+recipe.letsBake();
