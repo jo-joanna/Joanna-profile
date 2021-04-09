@@ -13,6 +13,40 @@ console.log("Anne has got " + totalpupils + " pupils");
 console.log(`${numberOfKittens} kittens belong to Anne\'s daughter and ${numberOfPuppies} puppies belong Anne\'s son.`)
 
 //task 3
+/*declered variable to trigger the button and funcion count1.
+That needs to be global scope*/
+let theButton = document.getElementById("count");
+theButton.addEventListener("click", count1);
+
+function updateHtml(tipvalue, Grosstotal) {   // the parameter can be called differently
+  let tipTag = document.getElementById("tipvalue");
+  let grossTag = document.getElementById("Grosstotal");
+
+  tipTag.innerHTML = tipvalue.toFixed(2);
+  grossTag.innerHTML = Grosstotal.toFixed(2);
+}
+
+function count1() {
+  let unit = document.getElementById("unit").value; // it's used to pass the argument
+
+const fish = 15.00;
+const tip = 0.1816;
+let total = 0;
+let tipvalue = 0;
+let Grosstotal = 0;
+
+if (unit > 0) {
+total = unit * fish;
+tipvalue = total * tip;
+Grosstotal = total + tipvalue;
+console.log(total);
+console.log(Grosstotal);
+};
+updateHtml(tipvalue, Grosstotal);
+
+};
+
+
 
 
 
